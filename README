@@ -1,42 +1,29 @@
 It contains four directories that are described below:
     1. problem_details:
-        
         We have used 6 programming problems in our experiments. A subdirectory is created for each problem in this directory. Each subdirectory contains:
-
             a. The problem statement in the file _statement.txt
-
             b. Testcases containing an input in file inputx.txt and the corresponding output in file outputx.txt
-
             c. A reference solution in the file solution.c.
+
     2. filters:
-
-        The 6 subdirectories contains 7 filters as described in the paper.
-
-            a. kEL represents solutions that contain k error lines and pass atleast 1 testcase. It contains subdirectories naming from submission_1 to submission_j and each submission directory contains a pair of correct and incorrect solution. The difference between correct and incorrect solutions is of k lines. To find the difference between two solutions, we have used an external tool named Clara. In the pair, a correct solution by a student X is selected for an incorrect solution by the same student. If no such correct solution by the student X is available, then we compare the incorrect solution by the reference solution.
-
-            b. The solutions in 2FT fails one or two testcases.
-
-            c. LIS contains the last incorrect solution by a student and pass atleast 1 testcase.
-
-            d. 2FT_intersect_LIS_intersect_kEL contains solutions that come in the intersection of 2FT, LIS, and kEL.
-
-            e. passing_atleast_1_test_but_not_all contains solutions that are incorrect but do not fail all test cases.
-
-            f. incorrect_solutions is a superset of previous one. It contains solutions that can fail all the test cases.
-
-        If a subdirectory is missing any of the above described filters, then it represents that no solution fall into that filter.
+        The 6 subdirectories containing 7 filters, as described in the paper.
+            a. kEL represents solutions that contain k error lines and pass atleast 1 testcase. It contains subdirectories named from submission_1 to submission_j, and each submission directory contains a pair of correct and incorrect solutions. The difference between correct and incorrect solutions is of k lines. To find the difference between the two solutions, we have used an external tool named Clara. In the pair, a correct solution by a student X is selected for an incorrect solution by the same student. If no such correct solution by student X is available, then we compare the incorrect solution with the reference solution.
+            b. The solutions in 2FT fail one or two testcases.
+            c. LIS contains the last incorrect solution by a student that passes atleast 1 testcase.
+            d. 2FT_intersect_LIS_intersect_kEL contains solutions that come at the intersection of 2FT, LIS, and kEL.
+            e. passing_atleast_1_test_but_not_all contains incorrect solutions that do not fail all test cases.
+            f. incorrect_solutions is a superset of the previous one. It contains solutions that can fail all the test cases.
+        If a subdirectory is missing any of the above-described filters, then it represents that no solution falls into that filter.
     3. additional_filters:
-
         It contains subdirectories for various combinations of individual filters 2FT, kEL and LIS.
 
     4. refute_questions:
-
-        It contains the solutions that we have selected from different filters and used them in user study.
+        It contains the solutions that we have selected from different filters and used in the user study.
 
 Note: Format of solution files:
-    studentid_submission#.c
+        studentid_submission#.c
 
     Example:
-    d744c2c2-350a-11e5-b84e-0242ac110011_003.c
-    studentid: d744c2c2-350a-11e5-b84e-0242ac110011
-    submission#: 003
+        d744c2c2-350a-11e5-b84e-0242ac110011_003.c
+        studentid: d744c2c2-350a-11e5-b84e-0242ac110011
+        submission#: 003
