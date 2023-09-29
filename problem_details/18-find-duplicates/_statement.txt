@@ -1,0 +1,33 @@
+ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice. These include
+- Comments for non trivial code 
+- Indentation: align your code properly 
+- Function use and modular programming
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Given an integer array, detect if it contains duplicate elements.
+
+Input Specification: 
+First line contains size N of the array.
+Next line contains N space separated integers giving the contents of the array.
+
+Output Format:
+Output YES or NO (followed by a newline).
+
+Variable Constraints:
+The array size is smaller than 50.
+Each array entry is an integer which fits an int data type.
+
+Example:
+Input:
+4
+34 13 42 13
+
+Output:
+YES
+
+Input
+4
+11 2 18 22
+
+Output:
+NO

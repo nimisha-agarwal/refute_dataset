@@ -1,0 +1,11 @@
+ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice. These include 
+- Comments for non trivial code 
+- Indentation: align your code properly 
+- Use of character constants instead of ASCII values ('a', 'b, ..., 'A', 'B', ..., '0', '1' etc instead of ASCII values like 65, 66, 48 etc.
+
+You would be given three integers as input which corresponds to the three sides of a triangle. Write a program to determine if the triangle is acute, right or obtuse. You should print "Invalid Triangle" if the side combinations do not correspond to a valid triangle.
+
+Input:
+3 5 4
+Output:
+Right Triangle

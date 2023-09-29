@@ -1,0 +1,27 @@
+/*compile-errors:e158_278064.c:17:9: warning: unused variable 'a' [-Wunused-variable]
+    int a;
+        ^
+1 warning generated.*/
+/*compile-result:1*/
+/*save-event:compile*/
+#include<stdio.h>
+
+int check_prime(int num);
+
+int check_prime(int num)
+{ int i;
+  int found=0;
+   for(i=2;i<num;i++)
+   {  if(num%i==0)
+       found=1;
+   }
+  return(found);  
+}
+//Complete function definitions
+
+int main(){
+    int a;
+    int f=check_prime(34);
+    printf("%d",f);
+    return 0;
+}

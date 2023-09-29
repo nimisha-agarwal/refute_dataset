@@ -1,0 +1,17 @@
+ANNOUNCEMENT:
+Up to 20% marks will be allotted for good programming practice. These include 
+- Comments: for the non trivial part of the code 
+- Indentation: align your code properly 
+- Use the function in the template compulsorily and more functions, if necessary. 
+-----------------------------------
+Given a positive integer N, print the number p, such that p is the smallest prime number greater than or equal to N.
+
+e.g.
+Input: 11
+Output: 11
+
+Input: 22
+Output: 23
+
+Input: 1
+Output: 2

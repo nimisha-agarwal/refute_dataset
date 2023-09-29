@@ -1,0 +1,32 @@
+/*compile-errors:e158_278328.c:17:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.*/
+/*compile-result:1*/
+/*save-event:compile*/
+#include<stdio.h>
+
+int check_prime(int num)
+{
+    int a;
+    int i,m;
+    m=num+1;
+    for(i=num;i>=num;i=i+1)
+    {
+        for(a=2;a<i;a=a+1){
+            if((i%a)==0)
+            break;
+            else
+            return m;
+        }
+    }
+}
+
+int main(){
+    int n,k;
+    scanf("%d",&n);
+    k=check_prime(n);
+    printf("%d",k);
+    
+    return 0;
+}

@@ -1,0 +1,63 @@
+/*compile-errors:e158_278281.c:13:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+e158_278281.c:24:15: warning: variable 'prime' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+           if(p1==i)
+              ^~~~~
+e158_278281.c:33:17: note: uninitialized use occurs here
+    printf("%d",prime);
+                ^~~~~
+e158_278281.c:24:12: note: remove the 'if' if its condition is always true
+           if(p1==i)
+           ^~~~~~~~~
+e158_278281.c:21:25: warning: variable 'prime' is used uninitialized whenever 'for' loop exits because its condition is false [-Wsometimes-uninitialized]
+        for(int i=num+1;i<(num+5);i++)
+                        ^~~~~~~~~
+e158_278281.c:33:17: note: uninitialized use occurs here
+    printf("%d",prime);
+                ^~~~~
+e158_278281.c:21:25: note: remove the condition if it is always true
+        for(int i=num+1;i<(num+5);i++)
+                        ^~~~~~~~~
+e158_278281.c:16:23: note: initialize the variable 'prime' to silence this warning
+    int num,p,p1,prime;
+                      ^
+                       = 0
+3 warnings generated.*/
+/*compile-result:1*/
+/*save-event:compile*/
+#include<stdio.h>
+
+int check_prime(int num)
+{
+ for(int i=2;i<(num/2);i++)
+ {
+     if(num%i==0)
+     {
+         return 1;
+     }
+ }
+
+}
+
+int main(){
+    int num,p,p1,prime;
+    scanf("%d",&num);
+    p=check_prime(num);
+    if(p==1)
+    {
+        for(int i=num+1;i<(num+5);i++)
+        {
+           p1= check_prime(i);
+           if(p1==i)
+           {
+              prime=i; 
+              break;
+           }    
+           break;
+        }
+    }
+    else prime=num;
+    printf("%d",prime);
+
+}
