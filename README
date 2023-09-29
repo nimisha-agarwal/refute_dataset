@@ -20,7 +20,8 @@ It contains four directories that are described below:
     4. refute_questions:
         It contains the solutions that we have selected from different filters and used in the user study.
 
-Note: Format of solution files:
+Note: 
+    Format of solution files:
         studentid_submission#.c
 
     Example:
