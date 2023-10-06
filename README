@@ -12,7 +12,7 @@ It contains four directories that are described below:
             c. LIS contains the last incorrect solution by a student that passes atleast 1 testcase.
             d. 2FT_intersect_LIS_intersect_kEL contains solutions that come at the intersection of 2FT, LIS, and kEL.
             e. passing_atleast_1_test_but_not_all contains incorrect solutions that do not fail all test cases.
-            f. incorrect_solutions is a superset of the previous one. It contains solutions that can fail all the test cases.
+            f. incorrect_solutions is a superset of all the filters mentioned above. It contains solutions that can fail all the test cases.
         If a subdirectory is missing any of the above-described filters, then it represents that no solution falls into that filter.
     3. additional_filters:
         It contains subdirectories for various combinations of individual filters 2FT, kEL and LIS.
